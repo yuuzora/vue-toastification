@@ -1,5 +1,7 @@
 @use "sass:math";
 
+@use "variables";
+
 .#{$vt-namespace}__container {
   z-index: $vt-z-index;
   position: fixed;

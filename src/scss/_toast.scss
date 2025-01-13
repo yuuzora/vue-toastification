@@ -1,3 +1,5 @@
+@use "variables";
+
 .#{$vt-namespace}__toast {
   display: inline-flex;
   position: relative;
