@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "MODE=demo yarn vite",
     "prebuild": "rimraf ./dist",
-    "build": "yarn build:code && yarn build:tsc",
+    "build": "run build:code && run build:tsc",
     "build:code": "MODE=lib vite build",
     "build:tsc": "NODE_ENV=production tsc --emitDeclarationOnly --project tsconfig.build.json",
     "build:demo": "MODE=demo vite build",
@@ -20,8 +20,7 @@
     "lint:eslint": "NODE_ENV=production eslint --ext vue,ts,tsx",
     "lint:staged": "yarn lint:tsc && yarn lint:eslint --fix",
     "preview": "NODE_ENV=production vite preview --port 3000 demo",
-    "prepublishOnly": "yarn lint && yarn test && yarn build",
-    "prepare": "husky install"
+    "prepublishOnly": "yarn lint && yarn test && yarn build"
   },
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
@@ -96,5 +95,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Maronato/vue-toastification.git"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
