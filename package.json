@@ -29,6 +29,10 @@
     ".": {
       "import": "./dist/index.es.js",
       "require": "./dist/index.umd.js"
+    },
+    "./src/*.scss": {
+      "import": "./src/*.scss",
+      "require": "./src/*.scss"
     }
   },
   "typings": "dist/types/index.d.ts",
