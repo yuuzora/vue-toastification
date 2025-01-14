@@ -1,4 +1,4 @@
-@use "../variables";
+@use "../variables" as *;
 
 // Bounce Animation taken from https://github.com/fkhadra/react-toastify
 $trans-cubic-bezier: cubic-bezier(0.215, 0.61, 0.355, 1);

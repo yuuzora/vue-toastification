@@ -1,4 +1,4 @@
-@use "../variables";
+@use "../variables" as *;
 
 $trans-cubic-bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
 @mixin timing-function {

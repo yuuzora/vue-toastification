@@ -33,6 +33,10 @@
     "./src/*.scss": {
       "import": "./src/*.scss",
       "require": "./src/*.scss"
+    },
+    "./src/*": {
+      "import": "./src/*",
+      "require": "./src/*"
     }
   },
   "typings": "dist/types/index.d.ts",

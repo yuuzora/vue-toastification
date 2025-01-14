@@ -1,6 +1,6 @@
 @use "sass:math";
 
-@use "variables";
+@use "variables" as *;
 
 .#{$vt-namespace}__container {
   z-index: $vt-z-index;
